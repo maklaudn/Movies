@@ -9,4 +9,5 @@
     <color name="teal_700">#FF018786</color>
     <color name="bright_blue">#0094FF</color>
     <color name="light_blue">#0F0094FF</color>
+    <color name="light_grey">#99000000</color>
 </resources>

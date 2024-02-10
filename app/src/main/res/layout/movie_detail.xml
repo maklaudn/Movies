@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
     <LinearLayout
         android:id="@+id/errorView"
@@ -26,6 +26,7 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:contentDescription="@string/no_connection"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_cloud_off" />
 
@@ -35,7 +36,7 @@
             android:layout_marginTop="14dp"
             android:gravity="center_horizontal"
             android:text="@string/error_description"
-            android:textColor="#0094FF"
+            android:textColor="@color/bright_blue"
             android:textSize="14sp" />
 
         <Button
@@ -43,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:backgroundTint="#0094FF"
+            android:backgroundTint="@color/bright_blue"
             android:text="@string/repeat" />
 
     </LinearLayout>
@@ -53,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="invisible"
-        tools:visibility="visible">
+        tools:visibility="invisible">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -64,6 +65,7 @@
                 android:id="@+id/bannerView"
                 android:layout_width="match_parent"
                 android:layout_height="533dp"
+                android:contentDescription="@string/movie_poster"
                 android:scaleType="centerCrop"
                 tools:srcCompat="@tools:sample/avatars" />
 
@@ -71,10 +73,11 @@
                 android:id="@+id/titleView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="31dp"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginEnd="48dp"
+                android:layout_marginEnd="30dp"
                 android:layout_marginBottom="16dp"
+                android:singleLine="true"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -84,11 +87,11 @@
                 android:id="@+id/descriptionView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginBottom="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="16dp"
                 android:ellipsize="end"
-                android:textColor="#99000000"
+                android:textColor="@color/light_grey"
                 android:textSize="14sp"
                 tools:text="Долгое описание фильма. Жил был старик, колобок и золотая рыбка" />
 
@@ -98,8 +101,8 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:layout_marginBottom="8dp"
-                android:textColor="#99000000"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/light_grey"
                 android:textSize="14sp"
                 tools:text="Жанры Жнары Жанры Жанры Жанры Жанры" />
 
@@ -110,7 +113,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="16dp"
-                android:textColor="#99000000"
+                android:textColor="@color/light_grey"
                 android:textSize="14sp"
                 tools:text="Страна Страна Страна " />
         </LinearLayout>
@@ -119,9 +122,10 @@
 
     <ImageButton
         android:id="@+id/backView"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_margin="20dp"
-        android:background="@drawable/ic_arrow_back" />
+        android:background="@drawable/ic_arrow_back"
+        android:contentDescription="@string/go_back" />
 
 </FrameLayout>
