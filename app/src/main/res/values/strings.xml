@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="Favorites">Избранное</string>
+    <string name="Popular">Популярные</string>
+    <string name="movie_poster">movie poster</string>
+    <string name="repeat">Повторить</string>
+    <string name="error_description">Произошла ошибка при загрузке данных, проверьте подключение к сети</string>
+    <string name="add_to_favorites">Add to favorites</string>
+</resources>
